@@ -1,64 +1,116 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Prisha Kalra | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Segoe UI', sans-serif; margin:0; background:#fdf6f9; color:#333; scroll-behavior: smooth; }
-    header { background:#f7dbe5; padding:3rem 2rem; text-align:center; animation: fadeIn 2s ease-in-out; }
-    header h1 { font-size:2.8rem; margin:0; color:#4b2e83; }
-    header p { font-size:1.3rem; margin-top:0.5rem; color:#6c4c91; }
-    section { max-width:800px; margin:3rem auto; background:#fff; padding:2rem; border-radius:12px; box-shadow:0 4px 10px rgba(0,0,0,0.05); animation: slideUp 1s ease-in-out; }
-    h2 { color:#4b2e83; border-bottom:2px solid #e7c1d0; padding-bottom:0.5rem; margin-bottom:1rem; }
-    ul { list-style:square; padding-left:1.5rem; }
-    .certificates a { color:#824caa; text-decoration:none; }
-    .certificates a:hover { text-decoration:underline; }
-    footer { text-align:center; padding:2rem; font-size:0.9rem; color:#999; animation: fadeIn 2s ease-in-out; }
-    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-    @keyframes slideUp { from { opacity:0; transform:translateY(40px); } to { opacity:1; transform:translateY(0); } }
-    a { color:#4b2e83; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f5f7;
+      color: #333;
+    }
+    header {
+      background: #ffdce0;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+    header p {
+      font-size: 20px;
+      margin: 10px 0 20px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      color: #d94c6f;
+    }
+    .certificates img {
+      width: 100%;
+      max-width: 400px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+    .footer {
+      background: #ffdce0;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Prisha Kalra</h1>
-    <p>CSE – AIML Student | Growing Tech Enthusiast 🌸</p>
-  </header>
-
-  <section>
+    <p>CSE-AIML Student | Web Enthusiast | Growing Developer</p>
+    <nav>
+      <a href="https://github.com/prisha0307" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/prisha-kalra-73422a20b" target="_blank">LinkedIn</a>
+    </nav>
+  </header>  <section>
     <h2>About Me</h2>
-    <p>Hi! I'm Prisha, a Computer Science Engineering student specializing in AI & ML. I love coding, building, and exploring new tech every day!</p>
-  </section>
-
-  <section>
+    <p>I’m a second-year Computer Science student specializing in Artificial Intelligence and Machine Learning. I love designing aesthetically pleasing, responsive websites and enjoy blending tech with creativity. Currently on a journey to grow my skills in frontend and content design!</p>
+  </section>  <section>
     <h2>Skills</h2>
-    <ul>
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>Python</li>
-    </ul>
-  </section>
-
-  <section class="certificates">
+    <div class="skills">
+      <div>HTML</div>
+      <div>CSS</div>
+      <div>Python</div>
+      <div>Git & GitHub</div>
+      <div>Communication</div>
+      <div>Hindi & English (Fluent)</div>
+    </div>
+  </section>  <section>
     <h2>Certificates</h2>
-    <ul>
-      <li><a href="https://www.linkedin.com/posts/prisha-kalra-73422a20b_dataanalytics-deloitte-forage-activity-7352274789723488256-MMM2" target="_blank">Deloitte Forage – Data Analytics Certificate</a></li>
-      <li><a href="https://www.linkedin.com/posts/prisha-kalra-73422a20b_html-css-webdevelopment-activity-7344985134388977664-bD2Q" target="_blank">HTML & CSS Web Development Certificate</a></li>
-      <li><a href="https://www.linkedin.com/posts/prisha-kalra-73422a20b_python-automation-100daysofcode-activity-7340796897130893312-ncvw" target="_blank">Python Automation & 100 Days of Code – Udemy</a></li>
-      <li><a href="https://www.linkedin.com/posts/prisha-kalra-73422a20b_digitalmarketing-internship-learningjourney-activity-7255155780931215361-TLP7" target="_blank">Digital Marketing Internship Certificate</a></li>
-    </ul>
-  </section>
-
-  <section>
+    <div class="certificates">
+      <a href="#"><img src="certificate1.jpg" alt="Deloitte Data Analytics"></a>
+      <a href="#"><img src="certificate2.jpg" alt="Python Automation"></a>
+      <a href="#"><img src="certificate3.jpg" alt="100 Days of Python"></a>
+      <a href="#"><img src="certificate4.jpg" alt="HTML CSS by Udemy"></a>
+      <a href="#"><img src="certificate5.jpg" alt="Digital Marketing Internship"></a>
+    </div>
+  </section>  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div>
+        <h4>Responsive Portfolio</h4>
+        <p>Built using HTML, CSS, and animations.</p>
+      </div>
+      <div>
+        <h4>Coming Soon Project</h4>
+        <p>Placeholder for your future GSSoC contribution.</p>
+      </div>
+    </div>
+  </section>  <section>
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:prishakalra@email.com">prishakalra@email.com</a></p>
-    <p>GitHub: <a href="https://github.com/prisha0307" target="_blank">github.com/prisha0307</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/prisha-kalra-73422a20b" target="_blank">linkedin.com/in/prisha-kalra</a></p>
-  </section>
-
-  <footer>
-    &copy; 2025 Prisha Kalra | All Rights Reserved
-  </footer>
+    <p>📧 Email: prishakalra@gmail.com</p>
+    <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/prisha-kalra-73422a20b" target="_blank">prisha-kalra</a></p>
+    <p>💻 GitHub: <a href="https://github.com/prisha0307" target="_blank">prisha0307</a></p>
+  </section>  <div class="footer">
+    &copy; 2025 Prisha Kalra. Designed with 💗 by Prisha.
+  </div>
 </body>
 </html>
